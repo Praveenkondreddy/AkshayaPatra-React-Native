@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { View, Text, Button,StyleSheet,Image,ImageBackground, TouchableOpacity, ScrollView} from 'react-native'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import Icon from 'react-native-vector-icons'
+import { AppBar } from "@react-native-material/core";
 
 
 
@@ -31,11 +31,14 @@ const Login = ({ navigation }) => {
 
     return (
   
-           
+           <>
+           <AppBar title="Login" 
+            color="white"
+        centerTitle={true}/>
         <View style={{ flex: 1, justifyContent: 'flex-end',
         backgroundColor:'white', alignItems: 'center',paddingBottom:50, }}>
-           <ScrollView style={{width:'96%',borderRadius:10,padding:4,borderWidth:2,marginBottom:21,marginTop:8}}>
-           <View style={{padding:1}}>
+           <ScrollView style={{width:'96%',borderRadius:10,padding:4,borderWidth:2,marginBottom:21,marginTop:10}}>
+           <View style={{padding:0}}>
                   
            <TouchableOpacity
            style={styles.touch}
@@ -220,7 +223,7 @@ const Login = ({ navigation }) => {
                 />   
         </View>
        
-       
+       </>
     )
 }
 

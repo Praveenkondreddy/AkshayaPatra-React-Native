@@ -125,7 +125,7 @@ const Verify = ({route,navigation}) => {
                         global.draw=true
                         AsyncStorage.setItem("session","start");
                         console.log(global.draw)
-                        navigation.navigate("Login")
+                        navigation.navigate("HomeTab")
                         Alert.alert("Info","Logged in successfully") 
 
                     }else{

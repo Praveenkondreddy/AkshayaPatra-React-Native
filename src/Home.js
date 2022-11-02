@@ -13,7 +13,7 @@ const Home = ({ navigation }) => {
               (value) =>{
                
               if(value==="start"){
-               navigation.navigate('Login')
+               navigation.navigate('HomeTab')
               }
               }
             );

@@ -20,7 +20,10 @@ import {
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+const Tab = createBottomTabNavigator();
 
 const HomeStack = createNativeStackNavigator();
 import Home from './src/Home';
@@ -51,6 +54,63 @@ import Surfaces from './src/Surface';
 import Switchs from './src/Switch';
 import Texts from './src/Text';
 import TextInputs from './src/TextInput';
+import Swiggy from './src/Swiggy';
+import Food from './src/Food'; 
+import Icon from 'react-native-vector-icons/FontAwesome';
+import Dineout from './src/Dineout';
+import InstaMart from './src/InstaMart';
+import Genie from './src/Genie';
+import Search from './src/Search';
+
+function HomeTabs() {
+  return (
+    <Tab.Navigator
+      screenOptions={
+        ({ route }) => ({
+          tabBarIcon: ({ focused, size, color }) => {
+            let iconName;
+            if (route.name === 'Swiggy') {
+              iconName = 'home';
+              size = focused ? 23 : 20;
+            } else if (route.name === 'Food') {
+              iconName = 'search';
+              size = focused ? 23: 20;
+            }else if (route.name === 'InstaMart') {
+              iconName = 'tags';
+              size = focused ? 23 : 20;
+            }else if (route.name === 'Dineout') {
+              iconName = 'gift';
+              size = focused ? 23 : 20;
+            }else if (route.name === 'Genie') {
+              iconName = 'user';
+              size = focused ? 23 : 20;
+            }
+            return (
+              <Icon
+                name={iconName}
+                size={size}
+                color={color}
+              />
+            );
+          }
+        })
+      }
+      tabBarOptions={{
+        activeTintColor: '#0080ff',
+        inactiveTintColor: '#777777',
+        labelStyle: { fontSize: 15, fontWeight: 'bold' }
+      }}
+      
+    >
+      <Tab.Screen name={'Swiggy'} component={Swiggy}  options={{headerShown: false,}}/>
+      <Tab.Screen name={'Food'} component={Food}  options={{headerShown: false,}} />
+      <Tab.Screen name={'InstaMart'} component={InstaMart}  options={{headerShown: false,}}/>
+      <Tab.Screen name={'Dineout'} component={Dineout}  options={{headerShown: false,}}/>
+      <Tab.Screen name={'Genie'} component={Genie}  options={{headerShown: false,}}/>
+    </Tab.Navigator>
+  );
+}
+
 const App = () => {
 
 
@@ -65,12 +125,13 @@ const App = () => {
             options={{ title: 'Home',headerShown: false }}
           />
           <HomeStack.Screen name="OTP" component={OTP} options={{headerShown: false,}}/>
+          <HomeStack.Screen name="HomeTab" component={HomeTabs} options={{headerShown: false,}}/>
           <HomeStack.Screen name="Login" 
                  component={Login}
                  options={{headerShown: false,}} />
           <HomeStack.Screen name="Verify" component={Verify} 
           options={{headerShown: false,}}/>
-        
+          <HomeStack.Screen name="search" component={Search} />
           <HomeStack.Screen name="Activity" component={Activity} />
           <HomeStack.Screen name="AppBar" component={AppBars} />
           <HomeStack.Screen name="Avatar" component={Avatars} />
