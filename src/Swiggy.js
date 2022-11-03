@@ -181,7 +181,7 @@ const Swiggy = ({ navigation}) => {
                        images.map((e,index)=>(
                         <Image
                         key={e}
-                        resizeMode='stretch'
+                        resizeMode='contain'
                         style={styles.wrap}
                         source={{uri:e}}
                         
@@ -226,7 +226,6 @@ const styles = StyleSheet.create({
         width:360,
         height:HEIGHT*0.27,
         marginTop:10,
-      
         borderRadius:10
 
     },
