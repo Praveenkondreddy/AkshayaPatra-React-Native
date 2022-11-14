@@ -177,11 +177,9 @@ const Swiggy = ({ navigation}) => {
                         source={{uri:e}} 
                         />
                        )
-
-                       ) 
+                     ) 
                     }
                 
-
                 </ScrollView>
 
                 <View style={styles.wrapDot}>
@@ -196,13 +194,9 @@ const Swiggy = ({ navigation}) => {
                         )
                     }
                 </View>
-
-
             </View>  
 
-       
         </SafeAreaView>
-    
        
     )
 }
