@@ -1,0 +1,17 @@
+{
+  "name": "Medical",
+  "displayName": "Sicom",
+  "faqs":[
+    {"sno":"1", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"2", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"3", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"4", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"4", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"5", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"6", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"7", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"8", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"9", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"},
+    {"sno":"10", "qus":"What is your Name ?", "ans":"My Name is Sumanpattukumar S"}
+  ]
+}
