@@ -68,7 +68,7 @@ const Swiggy = ({ navigation}) => {
                     navigation.navigate('search')
                 }}>
                 <View style={{flexDirection:'row',justifyContent:'space-around'}}>
-                <Text style={{fontSize:18,color:'black'}}>Search for restaurant item or more</Text>
+                <Text style={{fontSize:18,color:'black'}}>Search for the restaurant item or more</Text>
                 <Icon
                 name="search"
                 size={22}
