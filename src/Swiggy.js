@@ -35,7 +35,7 @@ const Swiggy = ({ navigation}) => {
                         Velchery
                     </Text>
                     <Text>
-                        Ramagiri nagar, Velechery, Tamilnadu
+                        Ramagiri nagar, Velchery, Tamilnadu
                     </Text>
 
 
