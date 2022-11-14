@@ -7,7 +7,8 @@ import { Surface, Stack } from "@react-native-material/core";
 const images=[
     'https://media.insider.in/image/upload/c_crop,g_custom/v1659447117/jhb24jlelbzajg11gdtr.jpg',
     'https://coupenyaari.in/wp-content/uploads/2022/08/Swiggy-Big-Birthday-Bash-Sale-min-1200x900.png',
-    'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUDWeSFsh355ZXDX3zbTTEuY_MK98Ju9VqtpLMOsvX_NpHN_3S2KbfTEjGsEOuzkKaTVRbkTlIgS7n0cZW4btMBcEF3KIF3AOdBfRUTPt08-P2P3bLq0WRKnZE53ecQKTep5AazWLJ49otT2u6JdvbVOuBN6wdRpg4_LXZ3wANva9RYtEvZT3xI5PIIQ/w1200-h630-p-k-no-nu/Swiggy%20Instamart%20Free%20Birthday%20Gift%20With%20Every%20Order.webp'
+    'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgUDWeSFsh355'+
+    'ZXDX3zbTTEuY_MK98Ju9VqtpLMOsvX_NpHN_3S2KbfTEjGsEOuzkKaTVRbkTlIgS7n0cZW4btMBcEF3KIF3AOdBfRUTPt08-P2P3bLq0WRKnZE53ecQKTep5AazWLJ49otT2u6JdvbVOuBN6wdRpg4_LXZ3wANva9RYtEvZT3xI5PIIQ/w1200-h630-p-k-no-nu/Swiggy%20Instamart%20Free%20Birthday%20Gift%20With%20Every%20Order.webp'
 ]
 
 const WIDTH= Dimensions.get('window').width;
@@ -38,7 +39,6 @@ const Swiggy = ({ navigation}) => {
                         Ramagiri nagar, Velchery, Tamilnadu
                     </Text>
 
-
                 </View>
                 <View>
                     <TouchableOpacity
@@ -46,15 +46,12 @@ const Swiggy = ({ navigation}) => {
                         navigation.navigate('home')
                     }}>
                     <Icon
-                            name="user"
-                            size={32}
-                        
-                            />
+                        name="user"
+                        size={32}
+                        />
 
                     </TouchableOpacity>
-                            
-                           
-
+             
                 </View>
 
             </View>
@@ -72,7 +69,6 @@ const Swiggy = ({ navigation}) => {
                 <Icon
                 name="search"
                 size={22}
-               
               />
               </View>  
                 </TouchableOpacity>
@@ -113,10 +109,10 @@ const Swiggy = ({ navigation}) => {
                 </View>
                </TouchableOpacity>
 
-
                 <TouchableOpacity onPress={()=>{
                 navigation.navigate('Dineout')
                }}> 
+
                 <View style={{alignItems:'center',marginHorizontal:10}}>
                     <View style={styles.images}>
                     <Image source={require('../assets/images/dine.jpg')} 
@@ -129,9 +125,7 @@ const Swiggy = ({ navigation}) => {
                     </Text>           
                 </View>
                 </TouchableOpacity>
-                
-               
-                
+             
             </View>  
             <View style={{flexDirection:'row'}}>
             <TouchableOpacity onPress={()=>{
@@ -161,10 +155,7 @@ const Swiggy = ({ navigation}) => {
                     Meat Delivery
                     </Text>           
                 </View>
-                
-                
-               
-                
+           
             </View>  
             </View>  
 
@@ -183,8 +174,7 @@ const Swiggy = ({ navigation}) => {
                         key={e}
                         resizeMode='contain'
                         style={styles.wrap}
-                        source={{uri:e}}
-                        
+                        source={{uri:e}} 
                         />
                        )
 
